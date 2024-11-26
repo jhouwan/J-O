@@ -1,0 +1,116 @@
+/* Background gradient */
+body {
+    background: linear-gradient(135deg, #a1c4fd, #c2e9fb);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+/* Styling profile container as a card */
+.profile-container {
+    color: #333;
+    max-width: 350px;
+    padding: 2rem 1.5rem;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 15px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+/* Hover effect for the card */
+.profile-container:hover {
+    transform: translateY(-10px);
+}
+
+/* Profile picture styling */
+.profile-picture {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 4px solid #007bff;
+    margin-bottom: 1rem;
+}
+
+/* Profile name styling */
+.profile-name {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+    color: #333;
+}
+
+/* Social links styling */
+.social-links {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}
+
+.link {
+    display: flex;
+    align-items: center;
+    color: #333;
+    font-size: 1.1rem;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Hover effect for links */
+.link:hover {
+    background-color: #007bff;
+    color: #fff;
+}
+
+/* Icon styling */
+.link i {
+    width: 24px;
+    height: 24px;
+    margin-right: 8px;
+}
+
+/* Set font-family untuk seluruh halaman */
+body {
+    font-family: 'Inter', sans-serif;
+    background: linear-gradient(135deg, #a1c4fd, #c2e9fb);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+/* Specific styles for headings and links */
+.profile-name {
+    font-weight: 700; /* Tebal untuk nama profil */
+}
+
+.link {
+    font-weight: 600; /* Sedang untuk link social media */
+}
+/* Mengatur body agar card di tengah halaman */
+body {
+    font-family: 'Inter', sans-serif;
+    background: linear-gradient(135deg, #a1c4fd, #c2e9fb);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+/* Styling profile container as a card */
+.profile-container {
+    color: #333;
+    max-width: 350px;
+    padding: 2rem 1.5rem;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 15px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s;
+}
