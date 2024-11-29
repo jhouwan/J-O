@@ -1,116 +1,216 @@
-/* Background gradient */
+/* styles.css */
+
+/* Menggunakan tema gelap */
 body {
-    background: linear-gradient(135deg, #a1c4fd, #c2e9fb);
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0;
+  background-color: #121212; /* Latar belakang hitam */
+  color: #E0E0E0; /* Teks putih terang */
+  margin: 0;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
 }
 
-/* Styling profile container as a card */
-.profile-container {
-    color: #333;
-    max-width: 350px;
-    padding: 2rem 1.5rem;
-    background: rgba(255, 255, 255, 0.9);
-    border-radius: 15px;
-    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    transition: transform 0.3s;
+header, footer {
+  background-color: #1C1C1C; /* Background header dan footer */
+  padding: 1.5rem;
+  text-align: center;
 }
 
-/* Hover effect for the card */
-.profile-container:hover {
-    transform: translateY(-10px);
+h1, h2 {
+  color: #FFD700; /* Emas lembut untuk judul */
+  margin-bottom: 1rem;
 }
 
-/* Profile picture styling */
-.profile-picture {
-    width: 120px;
-    height: 120px;
-    border-radius: 50%;
-    border: 4px solid #007bff;
-    margin-bottom: 1rem;
+p {
+  color: #B0B0B0; /* Teks abu-abu terang */
+  margin-bottom: 1rem;
 }
 
-/* Profile name styling */
-.profile-name {
-    font-size: 1.8rem;
-    font-weight: bold;
-    margin-bottom: 1.5rem;
-    color: #333;
+/* Galeri dengan gambar dan teks */
+#gallery .gallery-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Dua kolom: satu untuk gambar, satu untuk teks */
+  gap: 20px; /* Jarak antar elemen */
+  padding: 1rem;
+  align-items: start;
 }
 
-/* Social links styling */
+#gallery .gallery-container img {
+  border: 2px solid #FFD700; /* Border emas untuk foto */
+  border-radius: 8px;
+  max-width: 100%;
+  height: auto; /* Menjaga proporsi gambar */
+  object-fit: cover; /* Menjamin gambar rapi dalam kotak */
+  transition: transform 0.3s;
+}
+
+/* Media queries untuk layar besar (desktop) */
+@media (min-width: 1024px) {
+  #gallery .gallery-container img {
+    max-width: 400px; /* Maksimal lebar gambar */
+    height: auto; /* Menjaga proporsi */
+  }
+}
+
+/* Media queries untuk layar kecil (mobile) */
+@media (max-width: 768px) {
+  #gallery .gallery-container {
+    grid-template-columns: 1fr; /* Satu kolom untuk mobile */
+  }
+
+  #gallery .gallery-container img {
+    max-width: 300px; /* Maksimal lebar gambar */
+    margin: 0 auto; /* Tengah-tengah */
+  }
+
+  #gallery .gallery-text {
+    text-align: left; /* Rapi di tengah */
+  }
+}
+
+#gallery .gallery-container img:hover {
+  transform: scale(1.05); /* Efek zoom saat hover */
+}
+
+#gallery .gallery-text {
+  grid-column: 2 / 3; /* Mengisi kolom kedua */
+  color: #B0B0B0; /* Warna teks abu-abu terang */
+  font-size: 2rem;
+  line-height: 1.5;
+}
+
+/* Ruang Tambahan untuk Video/Gambar */
+#additional-gallery {
+  padding: 2rem;
+  background-color: #121212; /* Latar belakang gelap */
+}
+
+#additional-gallery h2 {
+  color: #FFD700; /* Warna emas untuk judul */
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 1.8rem;
+}
+
+.additional-gallery-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Responsif */
+  gap: 20px; /* Jarak antar item */
+  justify-items: center; /* Tengahkan elemen */
+}
+
+.media-item {
+  position: relative;
+  overflow: hidden;
+  border: 2px solid #FFD700; /* Border emas */
+  border-radius: 12px;
+  background-color: #1C1C1C; /* Background hitam */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Bayangan lembut */
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.media-item img, .media-item video {
+  max-width: 100%;
+  height: auto; /* Menjaga proporsi media */
+  object-fit: cover; /* Pastikan media terlihat rapi */
+  display: block;
+}
+
+.media-item video {
+  width: 100%; /* Pastikan video memenuhi container */
+  height: 100%;
+}
+
+.media-item:hover {
+  transform: scale(1.05); /* Efek zoom saat hover */
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.4); /* Bayangan lebih besar saat hover */
+}
+
+/* Media Queries untuk layar besar */
+@media (min-width: 1024px) {
+  .additional-gallery-container {
+    grid-template-columns: repeat(3, 1fr); /* Tiga kolom di desktop */
+  }
+}
+
+/* Media Queries untuk layar kecil */
+@media (max-width: 768px) {
+  .additional-gallery-container {
+    grid-template-columns: repeat(2, 1fr); /* Dua kolom di mobile */
+  }
+}
+
+/* Link Media Sosial */
 .social-links {
-    display: flex;
-    flex-direction: column;
-    gap: 0.8rem;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem; /* Jarak antar link */
+  padding: 1rem;
 }
 
-.link {
-    display: flex;
-    align-items: center;
-    color: #333;
-    font-size: 1.1rem;
-    text-decoration: none;
-    padding: 0.5rem 1rem;
-    border-radius: 8px;
-    transition: background-color 0.3s, color 0.3s;
+.social-links a {
+  color: #00BFA5; /* Cyan untuk link media sosial */
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  font-size: 1rem;
+  transition: color 0.3s;
 }
 
-/* Hover effect for links */
-.link:hover {
-    background-color: #007bff;
-    color: #fff;
+.social-links a:hover {
+  color: #FFD700; /* Emas saat hover */
 }
 
-/* Icon styling */
-.link i {
-    width: 24px;
-    height: 24px;
-    margin-right: 8px;
+/* Styling khusus untuk ikon TikTok */
+.tiktok-icon {
+  margin-right: 8px;
 }
 
-/* Set font-family untuk seluruh halaman */
-body {
-    font-family: 'Inter', sans-serif;
-    background: linear-gradient(135deg, #a1c4fd, #c2e9fb);
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0;
+/* Footer */
+footer p {
+  font-size: 0.875rem;
+  color: #888;
+  margin: 0;
 }
 
-/* Specific styles for headings and links */
-.profile-name {
-    font-weight: 700; /* Tebal untuk nama profil */
+/* Modal Styling */
+.modal {
+  display: none; /* Awalnya disembunyikan */
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.8);
+  justify-content: center;
+  align-items: center;
 }
 
-.link {
-    font-weight: 600; /* Sedang untuk link social media */
-}
-/* Mengatur body agar card di tengah halaman */
-body {
-    font-family: 'Inter', sans-serif;
-    background: linear-gradient(135deg, #a1c4fd, #c2e9fb);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    margin: 0;
+.modal-content {
+  max-width: 90%;
+  max-height: 90%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-/* Styling profile container as a card */
-.profile-container {
-    color: #333;
-    max-width: 350px;
-    padding: 2rem 1.5rem;
-    background: rgba(255, 255, 255, 0.9);
-    border-radius: 15px;
-    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    transition: transform 0.3s;
+.modal img, .modal video {
+  max-width: 100%;
+  max-height: 100%;
+  border: 2px solid white;
+  border-radius: 8px;
 }
+
+.modal .close {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  font-size: 2rem;
+  color: white;
+  cursor: pointer;
+}
+
+

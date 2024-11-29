@@ -1,50 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Profile Linktree</title>
-        <!-- Link ke Bootstrap -->
-        <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
-        <!-- Feather Icons CDN -->
-    <link rel="stylesheet" href="style.css">
-    <script src="https://unpkg.com/feather-icons"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio - Jhouwan Purukan</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+  <!-- Feather Icons untuk ikon media sosial -->
+  <script src="https://unpkg.com/feather-icons"></script>
 </head>
 <body>
-    <div class="profile-container">
-        <!-- Profile Image -->
-        <img src="Gambar WhatsApp 2024-07-02 pukul 00.16.37_0333bb08.jpg" alt="Profile Picture" class="profile-picture">
-        
-        <!-- Profile Name -->
-        <h1 class="profile-name">Jhouwan Purukan</h1>
-        
-          <!-- Social Media Links -->
-          <div class="social-links d-flex flex-column align-items-center">
-            <a href="https://www.instagram.com/jhouwansambeta07" target="_blank" class="link d-flex align-items-center">
-                <i data-feather="instagram" class="me-2"></i>Instagram</a>
-                <a href="https://www.tiktok.com/@rivaljoo?_t=8rAeo5LxeCX&_r=1" target="_blank" class="link d-flex align-items-center">
-                    <!-- TikTok Icon SVG -->
-                    <svg class="tiktok-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
-                        <path d="M9.75 2.25C9.75 1.56 10.31 1 11 1h2.25c.414 0 .75.336.75.75A5.25 5.25 0 0019.25 7.5c.414 0 .75.336.75.75v2.25c0 .69-.56 1.25-1.25 1.25A7.75 7.75 0 0111 4.25V10c0 3.448-2.802 6.25-6.25 6.25-.414 0-.75-.336-.75-.75v-2.5c0-.414.336-.75.75-.75a3.25 3.25 0 003.25-3.25V2.25z" fill="#25F4EE"/>
-                        <path d="M15.25 7.5v2.168a6.75 6.75 0 01-3.17-1.42v3.212c0 3.448-2.802 6.25-6.25 6.25-.414 0-.75-.336-.75-.75V14.81a4.77 4.77 0 002.25.44c2.023 0 3.75-1.727 3.75-3.75V2.25h1.5a5.25 5.25 0 005.25 5.25z" fill="#FE2C55"/>
-                        <path d="M7 13.69a2.69 2.69 0 100 5.38 2.69 2.69 0 000-5.38z" fill="#25F4EE"/>
-                        <path d="M7 14.81a1.57 1.57 0 100 3.14 1.57 1.57 0 000-3.14z" fill="#FE2C55"/>
-                        <path d="M11.5 7.75c.782.6 1.721 1.025 2.75 1.168V7.5a5.25 5.25 0 01-2.75-5.5H11a.75.75 0 00-.75.75v7.25c0 2.023-1.727 3.75-3.75 3.75a4.77 4.77 0 01-2.25-.44v2.441c0 .414.336.75.75.75 3.448 0 6.25-2.802 6.25-6.25V7.75z" fill="#FE2C55"/>
-                    </svg>
-                    TikTok
-                </a>
-                
-            <a href="https://www.youtube.com/@jhouwans.purukan8837" target="_blank" class="link d-flex align-items-center">
-                <i data-feather="youtube" class="me-2"></i>YouTube</a>
-            <a href="https://www.facebook.com/profile.php?id=100076227076575" target="_blank" class="link d-flex align-items-center">
-                <i data-feather="facebook" class="me-2"></i>Facebook</a>
-        </div>
-    </div>
+  
+  <!-- Header -->
+  <header>
+    <h1>Jhouwan Purukan</h1>
+    <p>Web Developer | Designer | Editor</p>
+  </header>
 
-     <!-- Feather Icons Initialization -->
-     <script>
-        feather.replace();
-    </script>
-</body> 
+  <!-- Tentang Saya -->
+  <section id="about">
+    <h2>Tentang Saya</h2>
+    <p>Hello! I am Jhouwan Purukan, a web developer who is enthusiastic about the world of design and technology. I have a passion for creating attractive and functional web designs. I am an expert in editing cinematic, aesthetic and pause videos. I love creating digital goods and selling them on social media like TikTok, Instagram, Facebook, LinkedIn, YouTube, Twitter and GitHub. I also have an online class called BG.ival and have additional income from selling credits and services. Thank You!</p>
+  </section>
+
+  <!-- Galeri -->
+  <section id="gallery">
+    <h2>Galeri</h2>
+    <div class="gallery-container">
+      <!-- Gambar pertama -->
+      <img src="IMG_20241110_083102.jpg" alt="Foto 1">
+      <!-- Teks di samping gambar kedua -->
+      <div class="gallery-text">
+        <p>Pria memang tidak bercerita tapi tiba tiba nge pig, wajarlah manusia bukan nabi Boy.😎🔥</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Ruang Tambahan untuk Video/Gambar -->
+  <section id="additional-gallery">
+    <h2>Ruang Tambahan</h2>
+    <div class="additional-gallery-container">
+      <div class="media-item">
+        <img src="IMG_20240822_203411.jpg" alt="Gambar 1">
+      </div>
+      <div class="media-item">
+        <img src="IMG_20240822_213403.jpg" alt="Gambar 2">
+      </div>
+      <div class="media-item">
+        <video autoplay loop muted>
+          <source src="Anime teriak_480p.mp4" type="video/mp4">
+          Browser Anda tidak mendukung video tag.
+        </video>
+      </div>
+      <div class="media-item">
+        <video autoplay loop muted>
+          <source src="videoplayback (1).mp4" type="video/mp4">
+          Browser Anda tidak mendukung video tag.
+        </video>
+      </div>
+    </div>
+  </section>
+
+  <!-- Link Media Sosial -->
+  <section id="social">
+    <h2>Media Sosial</h2>
+    <div class="social-links">
+      <a href="https://www.facebook.com/profile.php?id=100076227076575" target="_blank">
+        <i data-feather="facebook"></i> Facebook
+      </a>
+      <a href="https://instagram.com/jhouwansambeta07" target="_blank">
+        <i data-feather="instagram"></i> Instagram
+      </a>
+      <a href="https://www.youtube.com/@jhouwans.purukan8837" target="_blank">
+        <i data-feather="youtube"></i> YouTube
+      </a>
+      <a href="https://www.tiktok.com/@rivaljoo?_t=8rAeo5LxeCX&_r=1" target="_blank">
+        <svg class="tiktok-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+          <path d="M9.75 2.25C9.75 1.56 10.31 1 11 1h2.25c.414 0 .75.336.75.75A5.25 5.25 0 0019.25 7.5c.414 0 .75.336.75.75v2.25c0 .69-.56 1.25-1.25 1.25A7.75 7.75 0 0111 4.25V10c0 3.448-2.802 6.25-6.25 6.25-.414 0-.75-.336-.75-.75v-2.5c0-.414.336-.75.75-.75a3.25 3.25 0 003.25-3.25V2.25z" fill="#25F4EE"/>
+          <path d="M15.25 7.5v2.168a6.75 6.75 0 01-3.17-1.42v3.212c0 3.448-2.802 6.25-6.25 6.25-.414 0-.75-.336-.75-.75V14.81a4.77 4.77 0 002.25.44c2.023 0 3.75-1.727 3.75-3.75V2.25h1.5a5.25 5.25 0 005.25 5.25z" fill="#FE2C55"/>
+          <path d="M7 13.69a2.69 2.69 0 100 5.38 2.69 2.69 0 000-5.38z" fill="#25F4EE"/>
+          <path d="M7 14.81a1.57 1.57 0 100 3.14 1.57 1.57 0 000-3.14z" fill="#FE2C55"/>
+        </svg> TikTok
+      </a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2024 Jhouwan Purukan. All rights reserved.</p>
+  </footer>
+
+  <!-- Feather Icons Initialization -->
+  <script>
+    feather.replace();
+  </script>
+
+<!-- Modal untuk Gambar/Video -->
+<div id="media-modal" class="modal">
+  <span class="close">&times;</span>
+  <div class="modal-content">
+    <img id="modal-image" style="display: none;">
+    <video id="modal-video" controls autoplay style="display: none;"></video>
+  </div>
+</div>
+
+</body>
 </html>
